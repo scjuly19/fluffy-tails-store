@@ -1,0 +1,12 @@
+
+.drawer {
+  background-color: white;
+}
+.drawer-close-btn {
+  color: var(--primary-color);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+}

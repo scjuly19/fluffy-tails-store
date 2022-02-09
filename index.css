@@ -44,6 +44,9 @@ footer {
   height: 4rem;
   text-align: center;
 }
+button{
+  cursor: pointer;
+}
 .nav-list-item {
   display: inline-block;
   padding: 0.5rem;
