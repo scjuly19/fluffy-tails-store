@@ -3,6 +3,7 @@
   --primary-color: #fd3260;
   --secondary-color: #272727;
   --btn-font: white;
+  --nav-bg: #f3f3f4;
 }
 *,
 *:before,
@@ -32,6 +33,13 @@ header {
   background-color: var(--primary-color);
   padding: 0.5rem 1rem;
   color: var(--btn-font);
+  flex-wrap: wrap;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
 }
 main {
   padding-bottom: 6rem;
@@ -44,7 +52,7 @@ footer {
   height: 4rem;
   text-align: center;
 }
-button{
+button {
   cursor: pointer;
 }
 .nav-list-item {
@@ -61,14 +69,11 @@ button{
 .products-list {
   padding: 0rem 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   row-gap: 2rem;
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
-}
-.uppercase {
-  text-transform: uppercase;
 }
 .card-actions {
   right: 20px;
@@ -76,6 +81,25 @@ button{
 }
 .main-category-link {
   color: var(--btn-font);
+}
+.category-nav {
+  padding-bottom: 1rem;
+}
+/*Utilities*/
+.uppercase {
+  text-transform: uppercase;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.primary-txt {
+  color: var(--primary-color);
+}
+.small-img {
+ max-width: 90px;
 }
 /*Mobile specific styles*/
 @media only screen and (max-width: 768px) {
@@ -86,3 +110,24 @@ button{
     margin-top: 1rem;
   }
 }
+/*Tablet specific styles*/
+@media only screen and (min-width: 768px)and (max-width:1023px) {
+  .products-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*14inch Laptop specific*/
+@media only screen and (min-width: 1024px) and (max-width:1279px){
+  .products-list {
+    grid-template-columns: repeat(2, 1fr);
+  
+  }
+}
+/*Large screen specific styles*/
+@media only screen and (min-width: 1280px) and (max-width:1555px){
+  .products-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
