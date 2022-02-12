@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      rel="stylesheet"
+      href="https://splash-ui-lib.netlify.app/src/components/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://splash-ui-lib.netlify.app/src/utilities/index.css"
+    />
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="../styles/dogs.css" />
+    <script
+      src="https://kit.fontawesome.com/844e6ff74a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="flex align-items-center">
+        <div class="logo-wrapper flx-1">Fluffy Tails</div>
+        <nav>
+          <ul class="nav-list">
+            <li class="no-bullets-li nav-list-item">
+              <a href=""><i class="fas fa-search"></i></a>
+            </li>
+            <li class="no-bullets-li nav-list-item">
+              <a href=""><i class="far fa-user"></i></a>
+            </li>
+            <li class="no-bullets-li nav-list-item">
+              <a href=""><i class="fas fa-shopping-cart" id="open-cart"></i></a>
+            </li>
+          </ul>
+          <div class="drawer-container hide" id="cart-drawer-container">
+            <div class="drawer-wrapper">
+              <div class="drawer cart-drawer" id="cart-drawer">
+                <button
+                  class="`borderless-btn fs-30 cart-close-btn"
+                  id="close-cart"
+                >
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="cart-wrapper">
+                  <div class="cart-header">
+                    <h6 class="text-center">YOUR CART</h6>
+                  </div>
+                  <div class="cart-item-wrapper">
+                    <p class="text-center uppercase">
+                      Raw Bites Premium Dog Treats-Chicken
+                      Jerky
+                    </p>
+                    <div class="cart-item flex align-items-center">
+                      <img src="../images/cart-1.jpg" alt="cart-product" class="small-img" loading="lazy">
+                      <div class="cart-item-details" style="flex: 1;text-align: center;">
+                        <p>Pack of 1</p>
+                        <p>Rs.499/-</p>
+                        <div class="flex-center move-up">
+                          <button class="mr-8 borderless-btn"><i class="fa fa-minus"></i></button>
+                          <p>1</p>
+                          <button class="ml-8 borderless-btn"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="flex-center">
+                        <button class="text-center borderless-btn text-underline">Remove</button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-item-wrapper">
+                    <p class="text-center uppercase">
+                       Raw Bites Premium Dog Treats-Chicken
+                      Jerky
+                    </p>
+                    <div class="cart-item flex align-items-center">
+                      <img src="../images/cart-1.jpg" alt="cart-product" class="small-img" loading="lazy">
+                      <div class="cart-item-details" style="flex: 1;text-align: center;">
+                        <p>Pack of 1</p>
+                        <p>Rs.499/-</p>
+                        <div class="flex-center move-up">
+                          <button class="mr-8 borderless-btn"><i class="fa fa-minus"></i></button>
+                          <p>1</p>
+                          <button class="ml-8 borderless-btn"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="flex-center">
+                        <button class="text-center borderless-btn text-underline">Remove</button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="uppercase text-center">Total</p>
+                  <h6 class="text-center move-up">Rs. 998</h6>
+                  <button class="uppercase btn primary-btn checkout-btn">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <nav class="category-nav">
+          <ul class="flex-center mt-16">
+            <button
+            class="borderless-btn uppercase bold btn hide filter-btn primary-txt"
+            id="open-filter-menu"
+          >
+            Filters
+          </button>
+            <li class="no-bullets-li inline-block btn primary-btn">
+              <a href="../../index.html" class="uppercase main-category-link"
+                >Home</a
+              >
+            </li>
+            <li class="no-bullets-li inline-block ml-8 btn primary-btn">
+              <a href="" class="uppercase main-category-link">Shop for cats</a>
+            </li>
+            
+          </ul>
+        </nav>
+        <div class="drawer-container hide" id="filter-menu">
+          <div class="drawer-wrapper">
+            <div class="drawer" id="filter-drawer">
+              <button
+                class="`borderless-btn fs-30 drawer-close-btn"
+                id="close-filter-menu"
+              >
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+              <button class="borderless-btn bold text-left">
+                Clear All
+              </button>
+              <section id="price">
+                <h6>Price</h6>
+                <ul class="price-list">
+                  <li class="no-bullets-li">
+                    <input
+                      type="checkbox"
+                      id="price1"
+                      name="price1"
+                      value="Rs.199 to Rs.299"
+                    />
+                    <label for="price1">Rs.199 to Rs.399</label>
+                  </li>
+                  <li class="no-bullets-li mt-8">
+                    <input
+                      type="checkbox"
+                      id="price2"
+                      name="price2"
+                      value="Rs.399 to Rs.599"
+                    />
+                    <label for="price2">Rs.399 to Rs.599</label>
+                  </li>
+                  <li class="no-bullets-li mt-8">
+                    <input
+                      type="checkbox"
+                      id="price3"
+                      name="price3"
+                      value="Above Rs.599"
+                    />
+                    <label for="price3">Above Rs. 599</label>
+                  </li>
+                </ul>
+              </section>
+              <section id="category">
+                <h6>Category</h6>
+                <ul class="category-list">
+                  <li class="no-bullets-li">
+                    <input
+                      type="checkbox"
+                      id="category1"
+                      name="category1"
+                      value="Food"
+                    />
+                    <label for="category1">Food</label>
+                  </li>
+                  <li class="no-bullets-li mt-8">
+                    <input
+                      type="checkbox"
+                      id="category2"
+                      name="category2"
+                      value="Clothes"
+                    />
+                    <label for="category2">Clothes</label>
+                  </li>
+                  <li class="no-bullets-li mt-8">
+                    <input
+                      type="checkbox"
+                      id="category3"
+                      name="category3"
+                      value="Toys"
+                    />
+                    <label for="category3">Toys</label>
+                  </li>
+                </ul>
+              </section>
+              <section id="sort-by">
+                <h6>Sort by</h6>
+                <ul class="sort-by-list">
+                  <li class="no-bullets-li">
+                    <input
+                      type="checkbox"
+                      id="lowToHigh"
+                      name="lowToHigh"
+                      value="lowToHigh"
+                    />
+                    <label for="lowToHigh">Price- Low to High</label>
+                  </li>
+                  <li class="no-bullets-li mt-8">
+                    <input
+                      type="checkbox"
+                      id="highToLow"
+                      name="highToLow"
+                      value="highToLow"
+                    />
+                    <label for="highToLow">Price- High to Low</label>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+        
+        <div class="content-wrapper">
+          <nav class="side-nav-container">
+                <div class="flex justify-between">
+                <button class="borderless-btn bold text-left uppercase primary-txt">
+                  Apply
+                </button>
+                <button class="borderless-btn bold text-left text-underline">
+                  Clear All
+                </button>
+              </div>
+                <section id="price">
+                  <h6>Price</h6>
+                  <ul class="price-list">
+                    <li class="no-bullets-li">
+                      <input
+                        type="checkbox"
+                        id="price1"
+                        name="price1"
+                        value="Rs.199 to Rs.299"
+                      />
+                      <label for="price1">Rs.199 to Rs.399</label>
+                    </li>
+                    <li class="no-bullets-li mt-8">
+                      <input
+                        type="checkbox"
+                        id="price2"
+                        name="price2"
+                        value="Rs.399 to Rs.599"
+                      />
+                      <label for="price2">Rs.399 to Rs.599</label>
+                    </li>
+                    <li class="no-bullets-li mt-8">
+                      <input
+                        type="checkbox"
+                        id="price3"
+                        name="price3"
+                        value="Above Rs.599"
+                      />
+                      <label for="price3">Above Rs. 599</label>
+                    </li>
+                  </ul>
+                </section>
+                <section id="category">
+                  <h6>Category</h6>
+                  <ul class="category-list">
+                    <li class="no-bullets-li">
+                      <input
+                        type="checkbox"
+                        id="category1"
+                        name="category1"
+                        value="Food"
+                      />
+                      <label for="category1">Food</label>
+                    </li>
+                    <li class="no-bullets-li mt-8">
+                      <input
+                        type="checkbox"
+                        id="category2"
+                        name="category2"
+                        value="Clothes"
+                      />
+                      <label for="category2">Clothes</label>
+                    </li>
+                    <li class="no-bullets-li mt-8">
+                      <input
+                        type="checkbox"
+                        id="category3"
+                        name="category3"
+                        value="Toys"
+                      />
+                      <label for="category3">Toys</label>
+                    </li>
+                  </ul>
+                </section>
+                <section id="sort-by">
+                  <h6>Sort by</h6>
+                  <ul class="sort-by-list">
+                    <li class="no-bullets-li">
+                      <input
+                        type="checkbox"
+                        id="lowToHigh"
+                        name="lowToHigh"
+                        value="lowToHigh"
+                      />
+                      <label for="lowToHigh">Price- Low to High</label>
+                    </li>
+                    <li class="no-bullets-li mt-8">
+                      <input
+                        type="checkbox"
+                        id="highToLow"
+                        name="highToLow"
+                        value="highToLow"
+                      />
+                      <label for="highToLow">Price- High to Low</label>
+                    </li>
+                  </ul>
+                </section>
+          </nav>
+          <section id="products" class="products-list product-content-wrapper">
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/clothes/dgClothes-1.png"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Haathi Mera Saathi</p>
+                  <p class="card-primary-subtitle">Rs. 999/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/clothes/dgClothes-2.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Donuts Dog tee - yellow</p>
+                  <p class="card-primary-subtitle">Rs. 1099/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/clothes/dgClothes-3.png"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Real Friends Dog Tank</p>
+                  <p class="card-primary-subtitle">Rs. 1199/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/clothes/dgClothes-4.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Skull Dog Tank Top</p>
+                  <p class="card-primary-subtitle">Rs. 899/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/clothes/dgClothes-5.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">British Label Dog Tee – Red</p>
+                  <p class="card-primary-subtitle">Rs. 1299/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/clothes/dgClothes-6.png"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Superio Red</p>
+                  <p class="card-primary-subtitle">Rs. 1099/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/toys/dgToy-1.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Enlarge the Doggy</p>
+                  <p class="card-primary-subtitle">Rs. 1259/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/toys/dgToy-2.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Sleepy dog toy</p>
+                  <p class="card-primary-subtitle">Rs. 1159/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/toys/dgToy-3.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Witty The Owl</p>
+                  <p class="card-primary-subtitle">Rs. 1019/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/toys/dgToy-4.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Monster Bouncer - Red</p>
+                  <p class="card-primary-subtitle">Rs. 699/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/toys/dgToy-5.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Rugby bell treat toy- Black</p>
+                  <p class="card-primary-subtitle">Rs. 809/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/toys/dgToy-6.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Interactive Dog Ball</p>
+                  <p class="card-primary-subtitle">Rs. 2299/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/food/dgFood-1.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Lamb and Chicken Fresh Food</p>
+                  <p class="card-primary-subtitle">Rs. 199/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/food/dgFood-2.jpg"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Grain Free Chicken & Apple</p>
+                  <p class="card-primary-subtitle">Rs. 299/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/food/dgFood-3.png"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Big Monster Fresh Dog food</p>
+                  <p class="card-primary-subtitle">Rs. 599/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/food/dgFood-4.png"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Lamb & French Beans</p>
+                  <p class="card-primary-subtitle">Rs. 399/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/food/dgFood-5.png"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Chicken & Pumpkin</p>
+                  <p class="card-primary-subtitle">Rs. 399/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical products-list-item">
+              <div class="card-media">
+                <img
+                  src="../images/food/dgFood-6.png"
+                  alt=""
+                  class="responsive-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <p class="uppercase">Instant Bone Broth Chicken</p>
+                  <p class="card-primary-subtitle">Rs. 499/-</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn primary-btn uppercase">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <p>
+          Made with <span><i class="fas fa-heart"></i></span> for your furry
+          friend <span><i class="fas fa-paw"></i></span>
+        </p>
+      </footer>
+    </div>
+    <script src="../../index.js"></script>
+  </body>
+</html>
