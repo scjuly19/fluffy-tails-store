@@ -85,6 +85,47 @@ button {
 .category-nav {
   padding-bottom: 1rem;
 }
+.cart-close-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+}
+.cart-drawer {
+  margin-left: calc(100vw - 350px);
+  color: black;
+  width: 350px;
+}
+.cart-header {
+  border-bottom: 1px solid var(--primary-color);
+}
+.cart-item-wrapper {
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 1rem;
+}
+.cart-item-details{
+  flex: 1;
+  text-align: center;
+}
+.drawer {
+  background-color: white;
+}
+.drawer-close-btn {
+  color: var(--primary-color);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+}
+.checkout-btn {
+  width: 100%;
+}
+.form-input{
+  max-width: 530px;
+}
 /*Utilities*/
 .uppercase {
   text-transform: uppercase;
@@ -99,7 +140,22 @@ button {
   color: var(--primary-color);
 }
 .small-img {
- max-width: 90px;
+  max-width: 90px;
+}
+.move-up {
+  margin-top: -20px;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.outline-btn{
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.separator{
+  height: 1px;
+  width: 100%;
+  background-color: var(--secondary-color);
 }
 /*Mobile specific styles*/
 @media only screen and (max-width: 768px) {
@@ -111,23 +167,20 @@ button {
   }
 }
 /*Tablet specific styles*/
-@media only screen and (min-width: 768px)and (max-width:1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .products-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 /*14inch Laptop specific*/
-@media only screen and (min-width: 1024px) and (max-width:1279px){
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .products-list {
     grid-template-columns: repeat(2, 1fr);
-  
   }
 }
 /*Large screen specific styles*/
-@media only screen and (min-width: 1280px) and (max-width:1555px){
+@media only screen and (min-width: 1280px) and (max-width: 1555px) {
   .products-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-

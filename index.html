@@ -29,12 +29,74 @@
               <a href=""><i class="fas fa-search"></i></a>
             </li>
             <li class="no-bullets-li nav-list-item">
-              <a href=""><i class="far fa-user"></i></a>
+              <a href="./src/pages/login.html"><i class="far fa-user"></i></a>
             </li>
             <li class="no-bullets-li nav-list-item">
-              <a href=""><i class="fas fa-shopping-cart"></i></a>
+              <a href="" id="open-cart"><i class="fas fa-shopping-cart"></i></a>
             </li>
           </ul>
+          <div class="drawer-container hide" id="cart-drawer-container">
+            <div class="drawer-wrapper">
+              <div class="drawer cart-drawer" id="cart-drawer">
+                <button
+                  class="`borderless-btn fs-30 cart-close-btn"
+                  id="close-cart"
+                >
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="cart-wrapper">
+                  <div class="cart-header">
+                    <h6 class="text-center">YOUR CART</h6>
+                  </div>
+                  <div class="cart-item-wrapper">
+                    <p class="text-center uppercase">
+                      Raw Bites Premium Dog Treats-Chicken
+                      Jerky
+                    </p>
+                    <div class="cart-item flex align-items-center">
+                      <img src="./src/images/cart-1.jpg" alt="cart-product" class="small-img" loading="lazy">
+                      <div class="cart-item-details" style="flex: 1;text-align: center;">
+                        <p>Pack of 1</p>
+                        <p>Rs.499/-</p>
+                        <div class="flex-center move-up">
+                          <button class="mr-8 borderless-btn"><i class="fa fa-minus"></i></button>
+                          <p>1</p>
+                          <button class="ml-8 borderless-btn"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="flex-center">
+                        <button class="text-center borderless-btn text-underline">Remove</button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-item-wrapper">
+                    <p class="text-center uppercase">
+                       Raw Bites Premium Dog Treats-Chicken
+                      Jerky
+                    </p>
+                    <div class="cart-item flex align-items-center">
+                      <img src="./src/images/cart-1.jpg" alt="cart-product" class="small-img" loading="lazy">
+                      <div class="cart-item-details">
+                        <p>Pack of 1</p>
+                        <p>Rs.499/-</p>
+                        <div class="flex-center move-up">
+                          <button class="mr-8 borderless-btn"><i class="fa fa-minus"></i></button>
+                          <p>1</p>
+                          <button class="ml-8 borderless-btn"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="flex-center">
+                        <button class="text-center borderless-btn text-underline">Remove</button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="uppercase text-center">Total</p>
+                  <h6 class="text-center move-up">Rs. 998</h6>
+                  <button class="uppercase btn primary-btn checkout-btn">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
       </header>
       <main>
@@ -200,5 +262,6 @@
         </p>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
