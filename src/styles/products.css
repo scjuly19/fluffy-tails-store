@@ -1,7 +1,6 @@
 .content-wrapper {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid;
 }
 .side-nav-container {
   background-color: var(--nav-bg);
@@ -24,6 +23,10 @@
   margin-right: 10px;
   border: 1px solid var(--primary-color);
 }
+.clear-btn{
+  position: absolute;
+  right: 10px;
+}
 /*Mobile and tablet specific styles*/
 @media only screen and (max-width: 1024px) {
   .side-nav-container {
@@ -31,5 +34,7 @@
   }
   .filter-btn {
     display: block;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }

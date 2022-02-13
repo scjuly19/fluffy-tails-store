@@ -22,11 +22,22 @@
   <body>
     <div class="page-container">
       <header class="flex align-items-center header-wrapper">
-        <div class="logo-wrapper flx-1">Fluffy Tails</div>
-        <nav>
+        <div class="logo-wrapper">Fluffy Tails</div>
+        <nav class="nav-item-grp">
+          <form class="navbar-search">
+            <input type="text" placeholder="Search..." class="">
+            <button class="borderless-btn"><i class="fas fa-search"></i></a>
+           </button>
+          </form>
           <ul class="nav-list">
+            <li class="no-bullets-li nav-list-item  mobile-logo-wrapper hide">
+              <a href="">Fluffy Tails</a>
+            </li>
             <li class="no-bullets-li nav-list-item">
-              <a href=""><i class="fas fa-search"></i></a>
+              <a href="./src/pages/products.html"><i class="fas fa-store"></i></a>
+            </li>
+            <li class="no-bullets-li nav-list-item">
+              <a href="./src/pages/products.html"><i class="far fa-heart"></i></a>
             </li>
             <li class="no-bullets-li nav-list-item">
               <a href="./src/pages/login.html"><i class="far fa-user"></i></a>
@@ -100,21 +111,7 @@
         </nav>
       </header>
       <main>
-        <nav class="category-nav">
-          <ul class="flex-center mt-16">
-            <li class="no-bullets-li inline-block btn primary-btn">
-              <a
-                href="./src/pages/dogs.html"
-                class="uppercase main-category-link"
-                >Shop for dogs</a
-              >
-            </li>
-            <li class="no-bullets-li inline-block ml-8 btn primary-btn">
-              <a href="" class="uppercase main-category-link">Shop for cats</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="hero-image-wrapper mt-16">
+        <div class="hero-image-wrapper">
           <img
             src="./src/images/hero.png"
             alt="hero-image"

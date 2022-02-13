@@ -28,16 +28,16 @@
         <nav>
           <ul class="nav-list">
             <li class="no-bullets-li nav-list-item">
-              <a href=""><i class="fas fa-search"></i></a>
-            </li>
+                <a href=""><i class="fas fa-search"></i></a>
+              </li>
             <li class="no-bullets-li nav-list-item">
-              <a href="products.html"><i class="fas fa-store"></i></a>
-            </li>
+                <a href="products.html"><i class="fas fa-store"></i></a>
+              </li>
+              <li class="no-bullets-li nav-list-item">
+                <a href=""><i class="far fa-heart"></i></a>
+              </li>
             <li class="no-bullets-li nav-list-item">
-              <a href=""><i class="far fa-heart"></i></a>
-            </li>
-            <li class="no-bullets-li nav-list-item">
-              <a href=""><i class="far fa-user"></i></a>
+              <a href="login.html"><i class="far fa-user"></i></a>
             </li>
             <li class="no-bullets-li nav-list-item">
               <a href="" id="open-cart"><i class="fas fa-shopping-cart"></i></a>
@@ -69,7 +69,6 @@
                       />
                       <div
                         class="cart-item-details"
-                        style="flex: 1; text-align: center"
                       >
                         <p>Pack of 1</p>
                         <p>Rs.499/-</p>
@@ -137,9 +136,21 @@
         </nav>
       </header>
       <main>
-        <h2 class="text-center uppercase">Login</h2>
+        <h2 class="text-center uppercase">Create Account</h2>
         <form class="form-wrapper">
-          <label for="email" class="uppercase">Email</label>
+            <label for="firstname" class="uppercase">First Name</label>
+          <input
+            type="text"
+            id="firstname"
+            class="block input basic-input form-input"
+          />
+          <label for="lastname" class="uppercase mt-16 block">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            class="block input basic-input form-input"
+          />
+          <label for="email" class="uppercase mt-16 block">Email</label>
           <input
             type="text"
             id="email"
@@ -152,10 +163,9 @@
             id="password"
             class="block input basic-input form-input"
           />
-          <a href="" class="text-underline mt-16">Forgot your password?</a>
           <div class="flex mt-16">
-            <a class="btn primary-btn uppercase">Login</a>
-            <a class="btn outline-btn ml-8 uppercase" href="signup.html">Signup</a>
+            <a class="btn primary-btn uppercase">Signup</a>
+            <a class="btn outline-btn ml-8 uppercase" href="login.html">Login</a>
           </div>
         </form>
       </main>
