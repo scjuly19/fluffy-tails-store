@@ -177,6 +177,11 @@ button {
 .outline-btn:hover{
   background-color: var(--primary-color);
 }
+.wishlist-btn{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 /*Mobile specific styles*/
 @media only screen and (max-width: 768px) {
   .products-list {
