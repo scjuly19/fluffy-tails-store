@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://splash-ui-lib.netlify.app/src/components/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://splash-ui-lib.netlify.app/src/utilities/index.css"
+    />
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/form.css" />
+    <script
+      src="https://kit.fontawesome.com/844e6ff74a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="flex align-items-center header-wrapper">
+        <div class="logo-wrapper flx-1"><a href="../../index.html">Fluffy Tails</a></div>
+        <nav>
+          <ul class="nav-list">
+            <li class="no-bullets-li nav-list-item">
+              <a href=""><i class="fas fa-search"></i></a>
+            </li>
+            <li class="no-bullets-li nav-list-item">
+              <a href="products.html"><i class="fas fa-store"></i></a>
+            </li>
+            <li class="no-bullets-li nav-list-item">
+              <a href=""><i class="far fa-heart"></i></a>
+            </li>
+            <li class="no-bullets-li nav-list-item">
+              <a href=""><i class="far fa-user"></i></a>
+            </li>
+            <li class="no-bullets-li nav-list-item">
+              <a href="" id="open-cart"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+          <div class="drawer-container hide" id="cart-drawer-container">
+            <div class="drawer-wrapper">
+              <div class="drawer cart-drawer" id="cart-drawer">
+                <button
+                  class="`borderless-btn fs-30 cart-close-btn"
+                  id="close-cart"
+                >
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="cart-wrapper">
+                  <div class="cart-header">
+                    <h6 class="text-center">YOUR CART</h6>
+                  </div>
+                  <div class="cart-item-wrapper">
+                    <p class="text-center uppercase">
+                      Raw Bites Premium Dog Treats-Chicken Jerky
+                    </p>
+                    <div class="cart-item flex align-items-center">
+                      <img
+                        src="../images/cart-1.jpg"
+                        alt="cart-product"
+                        class="small-img"
+                        loading="lazy"
+                      />
+                      <div
+                        class="cart-item-details"
+                        style="flex: 1; text-align: center"
+                      >
+                        <p>Pack of 1</p>
+                        <p>Rs.499/-</p>
+                        <div class="flex-center move-up">
+                          <button class="mr-8 borderless-btn">
+                            <i class="fa fa-minus"></i>
+                          </button>
+                          <p>1</p>
+                          <button class="ml-8 borderless-btn">
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </div>
+                        <div class="flex-center">
+                          <button
+                            class="text-center borderless-btn text-underline"
+                          >
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-item-wrapper">
+                    <p class="text-center uppercase">
+                      Raw Bites Premium Dog Treats-Chicken Jerky
+                    </p>
+                    <div class="cart-item flex align-items-center">
+                      <img
+                        src="../images/cart-1.jpg"
+                        alt="cart-product"
+                        class="small-img"
+                        loading="lazy"
+                      />
+                      <div class="cart-item-details">
+                        <p>Pack of 1</p>
+                        <p>Rs.499/-</p>
+                        <div class="flex-center move-up">
+                          <button class="mr-8 borderless-btn">
+                            <i class="fa fa-minus"></i>
+                          </button>
+                          <p>1</p>
+                          <button class="ml-8 borderless-btn">
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </div>
+                        <div class="flex-center">
+                          <button
+                            class="text-center borderless-btn text-underline"
+                          >
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="uppercase text-center">Total</p>
+                  <h6 class="text-center move-up">Rs. 998</h6>
+                  <button class="uppercase btn primary-btn checkout-btn">
+                    Checkout
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <h2 class="text-center uppercase">Login</h2>
+        <form class="form-wrapper">
+          <label for="email" class="uppercase">Email</label>
+          <input
+            type="text"
+            id="email"
+            class="block input basic-input form-input"
+          />
+
+          <label for="password" class="mt-16 block uppercase">Password</label>
+          <input
+            type="text"
+            id="password"
+            class="block input basic-input form-input"
+          />
+          <a href="" class="text-underline mt-16">Forgot your password?</a>
+          <div class="flex mt-16">
+            <a class="btn primary-btn uppercase">Login</a>
+            <a class="btn outline-btn ml-8 uppercase" href="signup.html">Signup</a>
+          </div>
+        </form>
+      </main>
+      <footer>
+        <p>
+          Made with <span><i class="fas fa-heart"></i></span> for your furry
+          friend <span><i class="fas fa-paw"></i></span>
+        </p>
+      </footer>
+    </div>
+    <script src="../../index.js"></script>
+  </body>
+</html>

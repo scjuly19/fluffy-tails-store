@@ -14,7 +14,7 @@
       href="https://splash-ui-lib.netlify.app/src/utilities/index.css"
     />
     <link rel="stylesheet" href="../../index.css" />
-    <link rel="stylesheet" href="../styles/dogs.css" />
+    <link rel="stylesheet" href="../styles/products.css" />
     <script
       src="https://kit.fontawesome.com/844e6ff74a.js"
       crossorigin="anonymous"
@@ -23,17 +23,25 @@
   <body>
     <div class="page-container">
       <header class="flex align-items-center">
-        <div class="logo-wrapper flx-1">Fluffy Tails</div>
-        <nav>
+        <div class="logo-wrapper"><a href="../../index.html">Fluffy Tails</a></div>
+        <nav class="nav-item-grp">
+          <form class="navbar-search">
+            <input type="text" placeholder="Search..." class="">
+            <button class="borderless-btn"><i class="fas fa-search"></i></a>
+           </button>
+          </form>
           <ul class="nav-list">
-            <li class="no-bullets-li nav-list-item">
-              <a href=""><i class="fas fa-search"></i></a>
+            <li class="no-bullets-li nav-list-item  mobile-logo-wrapper hide">
+              <a href="">Fluffy Tails</a>
             </li>
             <li class="no-bullets-li nav-list-item">
-              <a href=""><i class="far fa-user"></i></a>
+              <a href=""><i class="far fa-heart"></i></a>
             </li>
             <li class="no-bullets-li nav-list-item">
-              <a href=""><i class="fas fa-shopping-cart" id="open-cart"></i></a>
+              <a href="login.html"><i class="far fa-user"></i></a>
+            </li>
+            <li class="no-bullets-li nav-list-item">
+              <a href="" id="open-cart"><i class="fas fa-shopping-cart" ></i></a>
             </li>
           </ul>
           <div class="drawer-container hide" id="cart-drawer-container">
@@ -101,25 +109,12 @@
         </nav>
       </header>
       <main>
-        <nav class="category-nav">
-          <ul class="flex-center mt-16">
             <button
             class="borderless-btn uppercase bold btn hide filter-btn primary-txt"
             id="open-filter-menu"
           >
             Filters
           </button>
-            <li class="no-bullets-li inline-block btn primary-btn">
-              <a href="../../index.html" class="uppercase main-category-link"
-                >Home</a
-              >
-            </li>
-            <li class="no-bullets-li inline-block ml-8 btn primary-btn">
-              <a href="" class="uppercase main-category-link">Shop for cats</a>
-            </li>
-            
-          </ul>
-        </nav>
         <div class="drawer-container hide" id="filter-menu">
           <div class="drawer-wrapper">
             <div class="drawer" id="filter-drawer">
@@ -222,17 +217,11 @@
             </div>
           </div>
         </div>
-        
         <div class="content-wrapper">
           <nav class="side-nav-container">
-                <div class="flex justify-between">
-                <button class="borderless-btn bold text-left uppercase primary-txt">
-                  Apply
-                </button>
-                <button class="borderless-btn bold text-left text-underline">
+                <button class="borderless-btn bold  text-underline clear-btn primary-txt">
                   Clear All
                 </button>
-              </div>
                 <section id="price">
                   <h6>Price</h6>
                   <ul class="price-list">
@@ -675,5 +664,6 @@
       </footer>
     </div>
     <script src="../../index.js"></script>
+    <script src="../javascript/docs.js"></script>
   </body>
 </html>
