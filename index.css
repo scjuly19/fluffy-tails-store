@@ -180,7 +180,8 @@ button {
 .wishlist-btn{
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 5px;
+  color: var(--primary-color);
 }
 /*Mobile specific styles*/
 @media only screen and (max-width: 768px) {
